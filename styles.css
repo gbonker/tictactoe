@@ -1,0 +1,24 @@
+body {
+  font-family: arial;
+  margin-left: 175px;
+  margin-top: 70px;
+}
+
+table, td, tr {
+  border: 1px solid black; 
+}
+
+td {
+  width:70px;
+  height:70px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#who-won {
+  margin-top: 30px;
+}
+
+#new-game {
+  margin-bottom: 30px;
+}

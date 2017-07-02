@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <!-- use table as gameboard -->
+    <button id="new-game">New Game</button>
+    <br />
+    <table id="tictac">
+      <tr>
+          <td class="board-space" id="top-left"></td>
+          <td class="board-space" id="top-middle"></td>
+          <td class="board-space" id="top-right"></td>
+      </tr>
+      <tr>
+          <td class="board-space" id="middle-left"></td>
+          <td class="board-space" id="middle-middle"></td>
+          <td class="board-space" id="middle-right"></td>
+      </tr>
+      <tr>
+          <td class="board-space" id="bottom-left"></td>
+          <td class="board-space" id="bottom-middle"></td>
+          <td class="board-space" id="bottom-right"></td>
+      </tr>
+    </table>
+    <div id="who-won"><p></p></div>
+  </body>
+</html>
