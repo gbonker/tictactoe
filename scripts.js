@@ -5,7 +5,7 @@ window.onload = function(){
     var spaceHeight = boardHeight / 3;
     $('#tictac').css('height', boardHeight+'px');
     $('.board-space').css('height', spaceHeight+'px');
-    $('.board-space').css('font-size', (spaceHeight-70)+'px');
+    $('.board-space').css('font-size', (spaceHeight*0.65)+'px');
   }
   boardSizes();
 
