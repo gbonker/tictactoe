@@ -4,30 +4,36 @@
     <meta charset="utf-8">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="scripts.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   </head>
   <body>
-    <!-- use table as gameboard -->
-    <button id="new-game">New Game</button>
-    <br />
-    <table id="tictac">
-      <tr>
-          <td class="board-space" id="top-left"></td>
-          <td class="board-space" id="top-middle"></td>
-          <td class="board-space" id="top-right"></td>
-      </tr>
-      <tr>
-          <td class="board-space" id="middle-left"></td>
-          <td class="board-space" id="middle-middle"></td>
-          <td class="board-space" id="middle-right"></td>
-      </tr>
-      <tr>
-          <td class="board-space" id="bottom-left"></td>
-          <td class="board-space" id="bottom-middle"></td>
-          <td class="board-space" id="bottom-right"></td>
-      </tr>
-    </table>
-    <div id="who-won"><p></p></div>
+    <div class="container">
+      <!-- use table as gameboard -->
+      <button id="new-game" class="btn btn-default">New Game</button>
+      <div id="who-won"><p></p></div>
+      <table id="tictac">
+        <tbody>
+          <tr>
+            <td class="board-space" id="top-left"></td>
+            <td class="board-space" id="top-middle"></td>
+            <td class="board-space" id="top-right"></td>
+          </tr>
+          <tr>
+              <td class="board-space" id="middle-left"></td>
+              <td class="board-space" id="middle-middle"></td>
+              <td class="board-space" id="middle-right"></td>
+          </tr>
+          <tr>
+              <td class="board-space" id="bottom-left"></td>
+              <td class="board-space" id="bottom-middle"></td>
+              <td class="board-space" id="bottom-right"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
