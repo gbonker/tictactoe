@@ -5,20 +5,33 @@ body {
 }
 
 table, td, tr {
-  border: 1px solid black; 
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
 }
 
 td {
-  width:70px;
-  height:70px;
   font-size: 40px;
   text-align: center;
+  overflow: hidden;
+}
+
+td:hover {
+  background-color: #FAFAFA; 
+}
+
+
+#new-game {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 #who-won {
-  margin-top: 30px;
-}
-
-#new-game {
-  margin-bottom: 30px;
+  position: absolute;
+  left: 150px;
+  top: 55px;
 }

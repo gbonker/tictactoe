@@ -1,4 +1,19 @@
 window.onload = function(){
+  // front-end
+  function boardSizes() {
+    var boardHeight = (window.innerHeight - 150);
+    var spaceHeight = boardHeight / 3;
+    $('#tictac').css('height', boardHeight+'px');
+    $('.board-space').css('height', spaceHeight+'px');
+    $('.board-space').css('font-size', (spaceHeight-70)+'px');
+  }
+  boardSizes();
+
+  $(window).resize(function() {
+    boardSizes();
+  });
+
+  // game logic
   var letter = "X";
   var newGameButton = document.getElementById("new-game");
   newGameButton.addEventListener("click", function() {
